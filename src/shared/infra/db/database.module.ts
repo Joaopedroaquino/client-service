@@ -6,7 +6,6 @@ import { postgres } from "./typeorm";
 @Module({
     imports: [
         ConfigModule.forRoot({
-            
             isGlobal: true,
             load: [
                 () => ({
@@ -14,7 +13,6 @@ import { postgres } from "./typeorm";
                     app: {
                         port: process.env.APP_PORT || 3333
                     },
-
                 })
             ]
         }),
@@ -25,8 +23,6 @@ import { postgres } from "./typeorm";
             useFactory: (config: ConfigService) =>
                 config.get<TypeOrmModuleOptions>('postgres'),
         }),
-
-
     ]
 })
 export class DatabaseModule {
