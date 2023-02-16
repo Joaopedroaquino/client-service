@@ -1,6 +1,5 @@
 version: '3.3'
 services:
-  # postgres teste
   database:
     image: "postgres"
     environment:
