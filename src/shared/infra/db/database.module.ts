@@ -21,7 +21,7 @@ import { postgres } from "./typeorm";
             imports: [ConfigModule],
             inject: [ConfigService],
             useFactory: (config: ConfigService) =>
-                config.get<TypeOrmModuleOptions>('postgres'),
+            config.get<TypeOrmModuleOptions>('postgres'),
         }),
     ]
 })

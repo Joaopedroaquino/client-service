@@ -8,4 +8,4 @@ import { DatabaseModule } from './shared/infra/db/database.module';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
