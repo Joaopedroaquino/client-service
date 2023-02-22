@@ -22,7 +22,9 @@ export class TodosService {
         const url = 'https://jsonplaceholder.typicode.com/todos';
         let result = await this.httpService.get<ITodo[]>(url).toPromise();
         return result
+
     }
+
 
 
 
